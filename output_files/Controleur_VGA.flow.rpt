@@ -1,5 +1,5 @@
 Flow report for Controleur_VGA
-Wed Dec 13 16:48:34 2017
+Thu Dec 14 11:40:34 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Wed Dec 13 16:48:34 2017      ;
+; Flow Status                     ; Successful - Thu Dec 14 11:40:34 2017      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; Controleur_VGA                             ;
 ; Top-level Entity Name           ; Controleur_VGA                             ;
@@ -49,7 +49,7 @@ applicable agreement for further details.
 ; Timing Models                   ; Preliminary                                ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
 ; Total registers                 ; 11                                         ;
-; Total pins                      ; 13                                         ;
+; Total pins                      ; 14                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
 ; Total DSP Blocks                ; 0                                          ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/13/2017 16:48:31 ;
+; Start date & time ; 12/14/2017 11:40:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Controleur_VGA      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 206915882223070.151318011101292 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 206915882223070.151324803003664 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;

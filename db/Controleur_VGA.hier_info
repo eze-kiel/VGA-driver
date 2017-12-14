@@ -10,17 +10,17 @@ clk => h_count[7]~reg0.CLK
 clk => h_count[8]~reg0.CLK
 clk => h_count[9]~reg0.CLK
 clk => h_count[10]~reg0.CLK
-reset => h_count[0]~reg0.ACLR
-reset => h_count[1]~reg0.ACLR
-reset => h_count[2]~reg0.ACLR
-reset => h_count[3]~reg0.ACLR
-reset => h_count[4]~reg0.ACLR
-reset => h_count[5]~reg0.ACLR
-reset => h_count[6]~reg0.ACLR
-reset => h_count[7]~reg0.ACLR
-reset => h_count[8]~reg0.ACLR
-reset => h_count[9]~reg0.ACLR
-reset => h_count[10]~reg0.ACLR
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
+reset => h_count.OUTPUTSELECT
 h_count[0] << h_count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 h_count[1] << h_count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 h_count[2] << h_count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -32,5 +32,6 @@ h_count[7] << h_count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 h_count[8] << h_count[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 h_count[9] << h_count[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 h_count[10] << h_count[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+h_synchro <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -28,71 +28,14 @@ vsim work.controleur_vga
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading work.controleur_vga(arch_controleur_vga)
-add wave -position end  sim:/controleur_vga/clk
 wave create -driver freeze -pattern clock -initialvalue U -period 20ns -dutycycle 50 -starttime 0ns -endtime 41600ns sim:/controleur_vga/clk
-wave create -driver freeze -pattern clock -initialvalue 0 -period 20ns -dutycycle 50 -starttime 0ns -endtime 41600ns sim:/controleur_vga/reset
-wave create -driver expectedOutput -pattern constant -value 00000000000 -range 10 0 -starttime 0ns -endtime 41600ns sim:/controleur_vga/h_count
-run
-run
-run
-run
-run
-run -continue
+add wave -position end  sim:/controleur_vga/h_count
+add wave -position end  sim:/controleur_vga/h_synchro
+run -all
+wave create -driver freeze -pattern constant -value U -starttime 0ns -endtime 41600ns sim:/controleur_vga/reset
 restart
 run -all
-wave create -driver freeze -pattern clock -initialvalue 0 -period 50000ns -dutycycle 50 -starttime 0ns -endtime 41600ns sim:/controleur_vga/reset
-run -all
-# 
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/clk "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/reset "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+wave modify -driver freeze -pattern constant -value 0 -starttime 0ns -endtime 41600ns Edit:/controleur_vga/reset
+wave edit change_value -start 20877907ps -end 20903362ps -value 1 Edit:/controleur_vga/reset
 restart
 run -all
-run -all
-# 
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/clk "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/reset "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-restart
-run -all
-wave create -driver freeze -pattern clock -initialvalue 0 -period 100000ns -dutycycle 50 -starttime 0ns -endtime 41600ns sim:/controleur_vga/reset
-run -all
-# 
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/clk "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/reset "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-run -all
-# 
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/clk "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/reset "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-run -all
-# 
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/clk "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-run -all
-# 
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/clk "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-run -all
-# 
-# Internal Error: In tclprim_ApplyStimulus for /controleur_vga/clk "Time value must be greater than "now": 41600000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-restart
-run -all
-wave modify -driver expectedOutput -pattern counter -startvalue 00000000000 -endvalue 11111111111 -type Range -direction Up -period 50ps -step 1 -repeat forever -range 10 0 -starttime 0ns -endtime 41600ns Edit:/controleur_vga/h_count
