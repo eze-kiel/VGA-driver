@@ -52,4 +52,42 @@ set_global_assignment -name VHDL_FILE Controleur_VGA.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_B13 -to B_OUT[0]
+set_location_assignment PIN_G13 -to B_OUT[1]
+set_location_assignment PIN_H13 -to B_OUT[2]
+set_location_assignment PIN_F14 -to B_OUT[3]
+set_location_assignment PIN_H14 -to B_OUT[4]
+set_location_assignment PIN_F15 -to B_OUT[5]
+set_location_assignment PIN_G15 -to B_OUT[6]
+set_location_assignment PIN_J14 -to B_OUT[7]
+set_location_assignment PIN_J9 -to G_OUT[0]
+set_location_assignment PIN_J10 -to G_OUT[1]
+set_location_assignment PIN_H12 -to G_OUT[2]
+set_location_assignment PIN_G10 -to G_OUT[3]
+set_location_assignment PIN_G11 -to G_OUT[4]
+set_location_assignment PIN_G12 -to G_OUT[5]
+set_location_assignment PIN_F11 -to G_OUT[6]
+set_location_assignment PIN_E11 -to G_OUT[7]
+set_location_assignment PIN_A13 -to R_OUT[0]
+set_location_assignment PIN_C13 -to R_OUT[1]
+set_location_assignment PIN_E13 -to R_OUT[2]
+set_location_assignment PIN_B12 -to R_OUT[3]
+set_location_assignment PIN_C12 -to R_OUT[4]
+set_location_assignment PIN_D12 -to R_OUT[5]
+set_location_assignment PIN_E12 -to R_OUT[6]
+set_location_assignment PIN_F13 -to R_OUT[7]
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_AE12 -to reset
+set_location_assignment PIN_D11 -to v_synchro
+set_location_assignment PIN_B11 -to h_synchro
+set_location_assignment PIN_A11 -to VGA_clk
+set_location_assignment PIN_C10 -to VGA_sync_n
+set_location_assignment PIN_F10 -to VGA_blank_n
+set_location_assignment PIN_AF9 -to rgb_in[0]
+set_location_assignment PIN_AC12 -to rgb_in[1]
+set_location_assignment PIN_AB12 -to rgb_in[2]
+set_location_assignment PIN_AD12 -to b_in
+set_location_assignment PIN_AC9 -to r_in
+set_location_assignment PIN_AE11 -to g_in
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
